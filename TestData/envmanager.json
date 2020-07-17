@@ -1,0 +1,30 @@
+﻿[
+  {
+    "value": "localhost",
+    "description": "ローカルのMySQL"
+  },
+  {
+    "value": "3306",
+    "description": "MySQLのデフォルトポート"
+  },
+  {
+    "value": "host.docker.internal",
+    "description": "Docker内のMySQLのホスト名"
+  },
+  {
+    "value": "3307",
+    "description": "Docker内のMySQLポート(ローカルのMySQLでふさがっているため)"
+  },
+  {
+    "value": "root",
+    "description": "SQL ServerのrootのID"
+  },
+  {
+    "value": "xxxx",
+    "description": "SQL Serverのrootのパスワード"
+  },
+  {
+    "value": "next111",
+    "description": "DB名"
+  }
+]

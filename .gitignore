@@ -1,0 +1,5 @@
+/TestData/application.settings
+*.templateset
+bin
+obj
+.vs
