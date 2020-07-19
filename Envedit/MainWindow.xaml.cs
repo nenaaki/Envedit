@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using Oniqys.Wpf;
 
 namespace Envedit
@@ -14,7 +13,7 @@ namespace Envedit
         {
             InitializeComponent();
 
-            DataContext = new ApplicationViewModel(this);
+            DataContext = new ProjectViewModel(this);
         }
     }
 }

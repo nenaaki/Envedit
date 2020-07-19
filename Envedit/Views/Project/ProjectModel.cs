@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace Envedit
 {
-    class ApplicationModel
+    class ProjectModel
     {
         private readonly JsonSerializerOptions _options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 
@@ -19,7 +19,7 @@ namespace Envedit
 
         public ObservableCollection<EnvironmentValuePath> Pathes { get; } = new ObservableCollection<EnvironmentValuePath>();
 
-        public ApplicationModel()
+        public ProjectModel()
         {
             Configuration = ReadSettings();
 
@@ -110,7 +110,7 @@ namespace Envedit
 
             }
 
-            var valueDic = Values.ToDictionary(each => each.Value);
+            var valueDic = Values.Distinct().ToDictionary(each => each.Value);
 
             ValuesChanged?.Invoke(this, EventArgs.Empty);
             PathesChanged?.Invoke(this, EventArgs.Empty);

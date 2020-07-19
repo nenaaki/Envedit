@@ -6,9 +6,9 @@ using Oniqys.Wpf.MVVM;
 
 namespace Envedit
 {
-    public class ApplicationViewModel : ViewModelBase
+    public class ProjectViewModel : ViewModelBase
     {
-        private readonly ApplicationModel _model = new ApplicationModel();
+        private readonly ProjectModel _model = new ProjectModel();
 
         private readonly IClosable _closer;
 
@@ -125,7 +125,7 @@ namespace Envedit
         public ICommand LoadTemplateCommand { get; }
 
 
-        public ApplicationViewModel()
+        public ProjectViewModel()
         {
             _model.PathesChanged += OnModelPathesChanged;
             _model.ValuesChanged += OnModelValuesChanged;
@@ -183,7 +183,7 @@ namespace Envedit
             }
         }
 
-        public ApplicationViewModel(IClosable closer)
+        public ProjectViewModel(IClosable closer)
             : this()
         {
             _closer = closer;

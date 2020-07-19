@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Oniqys.Wpf
+﻿namespace Oniqys.Wpf
 {
     public interface IClosable
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Oniqys.Wpf
 {
@@ -20,8 +16,8 @@ namespace Oniqys.Wpf
 
         // Using a DependencyProperty as the backing store for Behaviors.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty BehaviorsProperty =
-            DependencyProperty.RegisterAttached("Behaviors", typeof(IBehavior<FrameworkElement>[]), typeof(FrameworkElement), new PropertyMetadata(null, 
-                (s, e) => 
+            DependencyProperty.RegisterAttached("Behaviors", typeof(IBehavior<FrameworkElement>[]), typeof(FrameworkElement), new PropertyMetadata(null,
+                (s, e) =>
                 {
                     if (!(s is FrameworkElement owner))
                         return;
