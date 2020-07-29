@@ -25,7 +25,7 @@ namespace Oniqys.Wpf
                     if (e.NewValue is IBehavior<FrameworkElement>[] oldBehaviors)
                     {
                         foreach (var behavior in oldBehaviors)
-                            behavior.Detach(owner);
+                            behavior.Detach();
                     }
 
                     if (!(e.NewValue is IBehavior<FrameworkElement>[] behaviors))

@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace Envedit
 {
-    class ProjectModel
+    public class ProjectModel
     {
         private readonly JsonSerializerOptions _options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 

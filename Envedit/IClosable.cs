@@ -1,6 +1,6 @@
 ﻿namespace Envedit
 {
-    internal interface Closable
+    public interface IClosable<T>
     {
     }
 }
