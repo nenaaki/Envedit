@@ -11,6 +11,8 @@ namespace Envedit
     /// </summary>
     public class ProjectSelectorModel
     {
+        public static ProjectSelectorModel Instance { get; } = new ProjectSelectorModel();
+
         event EventHandler<EventArgs<ProjectModel>> CurrentProjectChanged;
 
         private ProjectModel _currentProject;
