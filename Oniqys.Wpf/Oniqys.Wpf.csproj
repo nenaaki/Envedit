@@ -5,4 +5,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Oniqys.Core\Oniqys.Core.csproj" />
+  </ItemGroup>
+
 </Project>

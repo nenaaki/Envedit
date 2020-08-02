@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Oniqys.Wpf.MVVM;
 
 namespace Envedit.Views.ProjectSelector
 {
-    public class ProjectSelectorViewModel
+    public class ProjectSelectorViewModel : ViewModelBase
     {
-        EnveditModel _model;
+        ProjectSelectorModel _model;
 
         public ProjectSelectorViewModel()
         {
-
         }
     }
 }

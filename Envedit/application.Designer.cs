@@ -26,12 +26,12 @@ namespace Envedit {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string resentProjects {
+        public string ResentProjects {
             get {
-                return ((string)(this["resentProjects"]));
+                return ((string)(this["ResentProjects"]));
             }
             set {
-                this["resentProjects"] = value;
+                this["ResentProjects"] = value;
             }
         }
     }
